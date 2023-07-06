@@ -1,5 +1,6 @@
 package Class;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Triangle {
@@ -14,8 +15,9 @@ public class Triangle {
     }
 
     public void data(){
+        Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the measures of triangle X: ");
+        System.out.println("Enter the measures of triangle: ");
         this.sideA = sc.nextDouble();
         this.sideB = sc.nextDouble();
         this.sideC = sc.nextDouble();
