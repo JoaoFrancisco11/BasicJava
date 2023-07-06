@@ -7,13 +7,10 @@ public class Triangle {
     public double sideB;
     public double sideC;
 
-    public void Measures(){
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("Enter the measures of triangle x: ");
-        sideA = sc.nextDouble();
-        sideB = sc.nextDouble();
-        sideC = sc.nextDouble();
+    public double area(){
+        double p = (sideA+sideB+sideC)/2.0;
+        double area = Math.sqrt(p*(p-sideA)*(p-sideB)*(p-sideC));
+        return area;
     }
 
 }
